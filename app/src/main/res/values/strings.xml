@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ConversorMonedas2</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="euros">Euros</string>
+    <string name="symbolEuro">€</string>
+    <string name="result">Resultado</string>
+    <string name="dollar">Dólares</string>
+    <string name="symbolDollar">$</string>
+    <string name="botonconvert">Convertir</string>
+    <string name="botonreset">Reset</string>
+    <string name="eurodollar">Euro-Dólar</string>
+    <string name="dollareuro">Dólar-Euro</string>
+    <string name="title2">Dólar-Euros</string>
+    <string name="title1">Euro-Dólar</string>
+</resources>
