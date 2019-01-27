@@ -22,21 +22,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle(R.string.title1); //Ponemos el titulo en la pantalla
 
-        //Atributos
+
         Button buttonConvert = findViewById(R.id.buttonConvert);
         Button buttonReset = findViewById(R.id.buttonReset);
         Button buttonDollarEuro = findViewById(R.id.buttoneurodollar);
         final EditText textoEuros = findViewById(R.id.editTextDolares);
         final TextView textoDollar = findViewById(R.id.textEuros);
 
-        //Queremos que solamente se muestran 2 decimales en el resultado
+
         final DecimalFormat df2 = new DecimalFormat(".##");
 
-        //Accion de calculo cuando se pulsa el boton de Convertir
+
         buttonConvert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Creamos un String temporal por si el usuario no introduce nada, aparece un mensaje
+
                 String tmp = textoEuros.getText().toString();
 
                 if (tmp.equalsIgnoreCase("")) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Creamos el codigo para borar ambos campos cuando se pulsa el boton borrar
+
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Creamos el codigo para cambiar de activity con el intent y pasamos el valor del dollar a la siguiente activity
+
         buttonDollarEuro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

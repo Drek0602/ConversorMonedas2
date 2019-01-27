@@ -31,14 +31,14 @@ public class Activity2 extends AppCompatActivity {
             textoDolares.setText(String.valueOf(tmp));
 
 
-            //Queremos que solamente se muestran 2 decimales en el resultado
+
             final DecimalFormat df2 = new DecimalFormat(".##");
 
-            //Accion de calculo cuando se pulsa el boton de Convertir
+
             buttonConvert.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Creamos un String temporal por si el usuario no introduce nada, aparece un mensaje
+
                     String tmp = textoDolares.getText().toString();
 
                     if (tmp.equalsIgnoreCase("")) {
@@ -52,7 +52,7 @@ public class Activity2 extends AppCompatActivity {
                 }
             });
 
-            //Creamos el codigo para borar ambos campos cuando se pulsa el boton borrar
+
             buttonReset.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -61,8 +61,7 @@ public class Activity2 extends AppCompatActivity {
                 }
             });
 
-        /*Creamos el codigo para cerrar el Activity actual, no invocamos el main activity porque sería cargar
-        de nuevo el mainActivity y despues otra vez el secundario y así se iría llenando la memoria innecesariamente*/
+
             buttonEuroDollar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
